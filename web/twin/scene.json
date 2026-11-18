@@ -1,0 +1,463 @@
+{
+  "source": "VLFT VFLab (CC BY-NC 4.0)",
+  "cite": "https://github.com/difactory/repository",
+  "unit_applied": 0.01,
+  "z_up": false,
+  "cells": [
+    {
+      "id": "CELL-FEED",
+      "name": "Feed & UR pick-and-place",
+      "order": 1
+    },
+    {
+      "id": "CELL-ASM1",
+      "name": "Assembly 1 \u00b7 pin + rivet",
+      "order": 2
+    },
+    {
+      "id": "CELL-ASM2",
+      "name": "Assembly 2 \u00b7 pin + rivet",
+      "order": 3
+    },
+    {
+      "id": "CELL-ASM3",
+      "name": "Assembly 3 \u00b7 pin + rivet",
+      "order": 4
+    },
+    {
+      "id": "CELL-ASM4",
+      "name": "Assembly 4 \u00b7 pin + rivet",
+      "order": 5
+    },
+    {
+      "id": "CELL-OUT",
+      "name": "Inspection & collection",
+      "order": 6
+    }
+  ],
+  "placements": [
+    {
+      "asset_id": "WAREHOUSE",
+      "file": "Warehouse.glb",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "kind": "scenery"
+    },
+    {
+      "asset_id": "RT1",
+      "file": "Rotating_Table_Station.glb",
+      "position": [
+        -0.40571,
+        0.0,
+        4.48448
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "kind": "station",
+      "model": "RotatingTableBuffer20",
+      "cell": "CELL-FEED"
+    },
+    {
+      "asset_id": "PPW1",
+      "file": "Wing_Conveyor_1_Station.glb",
+      "position": [
+        0.51702,
+        0.0,
+        4.818960000000001
+      ],
+      "rotation": [
+        0.0,
+        -3.141592653589793,
+        0.0
+      ],
+      "kind": "station",
+      "model": "WingConveyor1_Station",
+      "cell": "CELL-FEED"
+    },
+    {
+      "asset_id": "PPH1",
+      "file": "Wing_Conveyor_2_Station.glb",
+      "position": [
+        -0.07150000000000001,
+        0.0,
+        3.61895
+      ],
+      "rotation": [
+        -0.0,
+        -1.5707963267948966,
+        0.0
+      ],
+      "kind": "station",
+      "model": "WingConveyor2_Station",
+      "cell": "CELL-FEED"
+    },
+    {
+      "asset_id": "T1",
+      "file": "Tightener_Station.glb",
+      "position": [
+        -0.7432000000000001,
+        0.0,
+        5.1251999999999995
+      ],
+      "rotation": [
+        0.0,
+        1.5707963267948966,
+        0.0
+      ],
+      "kind": "station",
+      "model": "Tightener_Station",
+      "cell": "CELL-FEED"
+    },
+    {
+      "asset_id": "RPP1",
+      "file": "UR_Pick_and_Place_Station.glb",
+      "position": [
+        0.2,
+        0.0,
+        3.5
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "kind": "station",
+      "model": "URPickAndPlace_Station",
+      "cell": "CELL-FEED"
+    },
+    {
+      "asset_id": "B1",
+      "file": "Conveyor_Main.glb",
+      "position": [
+        0.2,
+        0.0,
+        2.5
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "kind": "station",
+      "model": "ConveyorBuffer5",
+      "cell": "CELL-ASM1"
+    },
+    {
+      "asset_id": "PI1",
+      "file": "Pin_Insertion_Station.glb",
+      "position": [
+        0.2,
+        0.0,
+        0.5
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "kind": "station",
+      "model": "PinInsertion_Station",
+      "cell": "CELL-ASM1"
+    },
+    {
+      "asset_id": "PP1",
+      "file": "Pick_and_Place_Station.glb",
+      "position": [
+        0.2,
+        0.0,
+        1.5
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "kind": "station",
+      "model": "PickAndPlace_Station",
+      "cell": "CELL-ASM1"
+    },
+    {
+      "asset_id": "R1",
+      "file": "Riveting_Station.glb",
+      "position": [
+        0.2,
+        0.0,
+        -0.5
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "kind": "station",
+      "model": "Riveting_Station",
+      "cell": "CELL-ASM1"
+    },
+    {
+      "asset_id": "B2",
+      "file": "Conveyor_Main.glb",
+      "position": [
+        0.2,
+        0.0,
+        -1.5
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "kind": "station",
+      "model": "ConveyorBuffer5",
+      "cell": "CELL-ASM2"
+    },
+    {
+      "asset_id": "PP3",
+      "file": "Pick_and_Place_Station.glb",
+      "position": [
+        0.2,
+        0.0,
+        -3.5
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "kind": "station",
+      "model": "PickAndPlace_Station",
+      "cell": "CELL-ASM2"
+    },
+    {
+      "asset_id": "R2",
+      "file": "Riveting_Station.glb",
+      "position": [
+        0.2,
+        0.0,
+        -5.5
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "kind": "station",
+      "model": "Riveting_Station",
+      "cell": "CELL-ASM2"
+    },
+    {
+      "asset_id": "PI2",
+      "file": "Pin_Insertion_Station.glb",
+      "position": [
+        0.2,
+        0.0,
+        -4.5
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "kind": "station",
+      "model": "PinInsertion_Station",
+      "cell": "CELL-ASM2"
+    },
+    {
+      "asset_id": "PP2",
+      "file": "Pick_and_Place_Station.glb",
+      "position": [
+        0.2,
+        0.0,
+        -2.5
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "kind": "station",
+      "model": "PickAndPlace_Station",
+      "cell": "CELL-ASM2"
+    },
+    {
+      "asset_id": "B3",
+      "file": "Conveyor_Main.glb",
+      "position": [
+        0.2,
+        0.0,
+        -6.5
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "kind": "station",
+      "model": "ConveyorBuffer5",
+      "cell": "CELL-ASM3"
+    },
+    {
+      "asset_id": "B4",
+      "file": "Conveyor_Main.glb",
+      "position": [
+        0.2,
+        0.0,
+        -10.5
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "kind": "station",
+      "model": "ConveyorBuffer5",
+      "cell": "CELL-ASM4"
+    },
+    {
+      "asset_id": "PI3",
+      "file": "Pin_Insertion_Station.glb",
+      "position": [
+        0.2,
+        0.0,
+        -8.5
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "kind": "station",
+      "model": "PinInsertion_Station",
+      "cell": "CELL-ASM3"
+    },
+    {
+      "asset_id": "PP5",
+      "file": "Pick_and_Place_Station_Box.glb",
+      "position": [
+        0.2,
+        0.0,
+        -11.5
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "kind": "station",
+      "model": "PickAndPlace2_Station",
+      "cell": "CELL-ASM4"
+    },
+    {
+      "asset_id": "R3",
+      "file": "Riveting_Station.glb",
+      "position": [
+        0.2,
+        0.0,
+        -9.5
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "kind": "station",
+      "model": "Riveting_Station",
+      "cell": "CELL-ASM3"
+    },
+    {
+      "asset_id": "PP4",
+      "file": "Pick_and_Place_Station.glb",
+      "position": [
+        0.2,
+        0.0,
+        -7.5
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "kind": "station",
+      "model": "PickAndPlace_Station",
+      "cell": "CELL-ASM3"
+    },
+    {
+      "asset_id": "R4",
+      "file": "Riveting_Station.glb",
+      "position": [
+        0.2,
+        0.0,
+        -13.5
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "kind": "station",
+      "model": "Riveting_Station",
+      "cell": "CELL-ASM4"
+    },
+    {
+      "asset_id": "C1",
+      "file": "Inspection_Camera_Station.glb",
+      "position": [
+        0.2,
+        0.0,
+        -14.5
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "kind": "station",
+      "model": "InspectionCamera_Station",
+      "cell": "CELL-OUT"
+    },
+    {
+      "asset_id": "CB1",
+      "file": "Collection_Box_Station.glb",
+      "position": [
+        0.2,
+        0.0,
+        -15.5
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "kind": "station",
+      "model": "CollectionBox_Station",
+      "cell": "CELL-OUT"
+    },
+    {
+      "asset_id": "PI4",
+      "file": "Pin_Insertion_Station.glb",
+      "position": [
+        0.2,
+        0.0,
+        -12.5
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "kind": "station",
+      "model": "PinInsertion_Station",
+      "cell": "CELL-ASM4"
+    }
+  ]
+}

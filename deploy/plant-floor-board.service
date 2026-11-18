@@ -1,0 +1,14 @@
+[Unit]
+Description=Plant-floor agent assistance board
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/groundwork
+ExecStart=/usr/bin/env node %h/groundwork/app/server.mjs
+Restart=on-failure
+RestartSec=2
+Environment=NODE_NO_WARNINGS=1
+
+[Install]
+WantedBy=default.target
